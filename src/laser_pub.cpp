@@ -26,12 +26,12 @@ int LaserScan::get_count(void) { return this->count; }
 
 int main(int argc, char **argv) {
 	// ROS setup
-	ros::init(argc, argv, "laser_pub");
+    ros::init(argc, argv, "laser_pub");
 	
 	//create instance of LaserScan
-	LaserScan* laser_pub_node = new LaserScan();
+    LaserScan* laser_pub_node = new LaserScan();
 
-	while(ros::ok()){
+    while(ros::ok()){
     // generating fake data for laser scan
 		
         for (unsigned int i = 0; i < laser_pub_node->get_num_readings(); i++){
