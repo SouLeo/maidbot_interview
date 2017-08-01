@@ -5,7 +5,7 @@
 2. [How to Run](#how-to-run)
 
 ### Author: Selma Wanna
-### email: [Selma Wanna](slwanna@utexas.edu)
+### email: slwanna@utexas.edu
 
 ## Installation
 (todo)
