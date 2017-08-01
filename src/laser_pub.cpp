@@ -13,7 +13,7 @@ LaserScan::LaserScan() :
     r(1.0)
 
 {
-	ros::Publisher laser_scan_pub = n.advertise<sensor_msgs::LaserScan>("sensor_msgs/LaserScan",50);
+    ros::Publisher laser_scan_pub = n.advertise<sensor_msgs::LaserScan>("sensor_msgs/LaserScan",50);
 
 }
 
@@ -34,15 +34,15 @@ int main(int argc, char **argv) {
 	while(ros::ok()){
 		// generating fake data for laser scan
 		
-		for (unsigned int i = 0; i < laser_pub_node->get_num_readings(); i++){
+        for (unsigned int i = 0; i < laser_pub_node->get_num_readings(); i++){
             laser_pub_node->ranges.push_back(laser_pub_node->get_count());
             laser_pub_node->intensities.push_back(100 + laser_pub_node->get_count());
-		}
-		ros::Time scan_time = ros::Time::now();
-	}
+        }
+        ros::Time scan_time = ros::Time::now();
+    }
 	
 
-	ros::waitForShutdown();
+    ros::waitForShutdown();
 
-	return 0;
+    return 0;
 }
