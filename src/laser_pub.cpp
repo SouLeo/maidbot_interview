@@ -5,13 +5,10 @@
 
 #include "lidar/laser_pub.h"
 
-LaserScan::LaserScan() : n("~"),
-
-    num_readings(100), laser_frequency(40)
+LaserScan::LaserScan() : n("~"), num_readings(100), laser_frequency(40)
 
 { ros::Publisher laser_scan_pub =
     n.advertise<sensor_msgs::LaserScan>("sensor_msgs/LaserScan",50);
-
 }
 
 // Getters for private member variables
@@ -23,7 +20,7 @@ double LaserScan::get_laser_frequency(void) { return this->laser_frequency; }
 // Fill Laser Scan Message function
 void fill_scan(sensor_msgs::LaserScan& scan, std::string
         frame_id, float ang_min, float ang_max, float ang_incr, double
-        time_incr, float range_min, float range_max, unsigned int num_readings){
+        time_incr, float range_min, float range_max, unsigned int num_readings) {
     scan.header.frame_id = frame_id;
     scan.angle_min = ang_min;
     scan.angle_max = ang_max;
@@ -70,9 +67,9 @@ int main(int argc, char **argv) {
         laser_pub_node->laser_scan_pub.publish(laser_pub_node->scan); 
         count++;
         r.sleep();
-
     }	
 
     ros::waitForShutdown();
 
-    return 0; }
+    return 0; 
+}
