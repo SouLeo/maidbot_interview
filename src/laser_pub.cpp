@@ -35,11 +35,10 @@ int main(int argc, char **argv) {
 		// generating fake data for laser scan
 		
 		for (unsigned int i = 0; i < laser_pub_node->get_num_readings(); i++){
-		    laser_pub_node->ranges.push_back(laser_pub_node->get_count());
+            laser_pub_node->ranges.push_back(laser_pub_node->get_count());
             laser_pub_node->intensities.push_back(100 + laser_pub_node->get_count());
 		}
 		ros::Time scan_time = ros::Time::now();
-		
 	}
 	
 
