@@ -1,4 +1,5 @@
-// Author: Selma Wanna Reference Material:
+// Author: Selma Wanna 
+// Reference Material:
 // http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors#Writing_Code_to_Publish_a_LaserScan_Message
 // http://wiki.ros.org/laser_pipeline/Tutorials/IntroductionToWorkingWithLaserScannerData
 
