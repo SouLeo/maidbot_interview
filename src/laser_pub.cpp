@@ -7,7 +7,7 @@
 
 LaserScan::LaserScan() : n("~"), num_readings(100), laser_frequency(40)
 
-{ ros::Publisher laser_scan_pub =
+{ laser_scan_pub =
     n.advertise<sensor_msgs::LaserScan>("sensor_msgs/LaserScan",50);
 }
 
@@ -35,11 +35,11 @@ void fill_scan(sensor_msgs::LaserScan& scan, std::string
 int main(int argc, char **argv) {
     unsigned int count(0);
     // ROS setup
-    ros::Rate r(1.0);
     ros::init(argc, argv, "laser_pub");
-	
-    //create instance of LaserScan
-    LaserScan* laser_pub_node = new LaserScan();
+
+    LaserScan* laser_pub_node = new LaserScan; 
+
+    ros::Rate r(1.0);
 
     float ang_incr = 3.14 / laser_pub_node->get_num_readings(); 
     double time_incr = (1 / laser_pub_node->get_laser_frequency()) /

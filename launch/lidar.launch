@@ -1,0 +1,14 @@
+<launch>
+
+    <node
+        name    = "laser_pub"
+        pkg     = "lidar"
+        type    = "laser_pub"
+        args    = ""
+
+        respawn = "false"
+        output  = "screen"
+    />
+
+
+</launch>
