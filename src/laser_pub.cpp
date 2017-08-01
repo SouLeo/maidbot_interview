@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
             laser_pub_node->ranges.push_back(count);
             laser_pub_node->intensities.push_back(100 + count); 
         } 
-    
+        
         //populate LaserScan message
         ros::Time scan_time = ros::Time::now();
         laser_pub_node->scan.header.stamp = scan_time; 
@@ -64,8 +64,13 @@ int main(int argc, char **argv) {
             laser_pub_node->scan.ranges[i] = laser_pub_node->ranges[i];
             laser_pub_node->scan.intensities[i] = laser_pub_node->intensities[i];
         }
+
+        laser_pub_node->ranges.clear();
+        laser_pub_node->intensities.clear(); 
+
         laser_pub_node->laser_scan_pub.publish(laser_pub_node->scan); 
         count++;
+        ROS_INFO("count: %d", count);
         r.sleep();
     }	
 
