@@ -24,7 +24,6 @@ class LaserScan {
 
         unsigned int get_num_readings();
         double get_laser_frequency();
-        int get_count();
 		
         // constructor/destructor
         LaserScan();
