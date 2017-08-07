@@ -1,0 +1,8 @@
+prefix=/home/slwanna/maidbot_interview/install
+
+Name: fake_odom
+Description: Description of fake_odom
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/slwanna/maidbot_interview/install/lib 
+Requires: 

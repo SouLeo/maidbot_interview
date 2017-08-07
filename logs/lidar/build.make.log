@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target lidar[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/laser_pub.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/slwanna/maidbot_interview/devel/.private/lidar/lib/liblidar.so[0m
+[ 50%] Built target lidar
+[35m[1mScanning dependencies of target laser_pub[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/laser_pub.dir/src/laser_pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/slwanna/maidbot_interview/devel/.private/lidar/lib/lidar/laser_pub[0m
+[100%] Built target laser_pub
