@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
 
         laser_pub_node->laser_scan_pub.publish(laser_pub_node->scan); 
         count++;
-        ROS_INFO("count: %d", count);
+//        ROS_INFO("count: %d", count);
         r.sleep();
     }	
 
