@@ -252,6 +252,9 @@ cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 //Value Computed by CMake
 fake_odom_BINARY_DIR:STATIC=/home/slwanna/maidbot_interview/build/fake_odom
 
+//Dependencies for target
+fake_odom_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 fake_odom_SOURCE_DIR:STATIC=/home/slwanna/maidbot_interview/src/fake_odom
 

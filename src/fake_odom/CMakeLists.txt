@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(fake_odom)
 
+if (NOT CMAKE_CXX_STANDARD)
+    set(CMAKE_CXX_STANDARD 11)
+endif()
+
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
@@ -104,9 +108,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES fake_odom
-#  CATKIN_DEPENDS geometry_msgs nav_msgs roscpp tf
+  INCLUDE_DIRS include
+  LIBRARIES fake_odom
+  CATKIN_DEPENDS geometry_msgs nav_msgs roscpp tf
 #  DEPENDS system_lib
 )
 
@@ -117,14 +121,14 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/fake_odom.cpp
-# )
+ add_library(${PROJECT_NAME}
+   src/odom_pub.cpp
+ )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -134,7 +138,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/fake_odom_node.cpp)
+add_executable(odom_pub src/odom_pub.cpp)
+target_link_libraries(odom_pub ${catkin_LIBRARIES} fake_odom)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

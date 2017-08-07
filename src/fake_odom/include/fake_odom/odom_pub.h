@@ -20,12 +20,30 @@ class FakeOdom{
         // ROS
         ros::Publisher odom_pub;
         nav_msgs::Odometry odom;
+        geometry_msgs::Quaternion odom_quat;
+        geometry_msgs::TransformStamped odom_trans;
+        tf::TransformBroadcaster odom_broadcaster;
 
         // velocities
         double x;
         double y;
-        double z;
+        double th;
 
+        double dt;
+        double delta_x;
+        double delta_y;
+        double delta_th;
+
+        // member function
+        void odom_trans_init(geometry_msgs::TransformStamped& foo, ros::Time current);
+        void odom_trans_update(geometry_msgs::TransformStamped& foo, ros::Time current, double x, double y, geometry_msgs::Quaternion odom_quat);
+
+        // getters
+        float getvx();
+        float getvy();
+        float getvth();
+        
+        
         // constructor/destructor
         FakeOdom();
         ~FakeOdom();

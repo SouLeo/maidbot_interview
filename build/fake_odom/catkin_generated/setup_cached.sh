@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/slwanna/maidbot_interview/devel/.private/fake_odom:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/slwanna/maidbot_interview/devel/.private/fake_odom/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/slwanna/maidbot_interview/devel/.private/fake_odom/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/slwanna/maidbot_interview/build/fake_odom"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/slwanna/maidbot_interview/devel/.private/fake_odom/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/slwanna/maidbot_interview/src/fake_odom:$ROS_PACKAGE_PATH"
