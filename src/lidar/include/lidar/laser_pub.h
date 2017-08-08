@@ -3,6 +3,7 @@
 
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
+#include <math.h>
 
 class LaserScan {
     private:

@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
         laser_pub_node->intensities.clear(); 
 
         laser_pub_node->laser_scan_pub.publish(laser_pub_node->scan); 
-        count++;
+        count = rand() % 10;
 //        ROS_INFO("count: %d", count);
         r.sleep();
     }	
