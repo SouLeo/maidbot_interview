@@ -1,0 +1,5 @@
+Linked: (/home/slwanna/maidbot_interview/devel/.private/fake_odom/share/fake_odom/cmake/fake_odomConfig-version.cmake, /home/slwanna/maidbot_interview/devel/share/fake_odom/cmake/fake_odomConfig-version.cmake)
+Linked: (/home/slwanna/maidbot_interview/devel/.private/fake_odom/share/fake_odom/cmake/fake_odomConfig.cmake, /home/slwanna/maidbot_interview/devel/share/fake_odom/cmake/fake_odomConfig.cmake)
+Symlinking /home/slwanna/maidbot_interview/devel/lib/libfake_odom.so
+Symlinking /home/slwanna/maidbot_interview/devel/lib/fake_odom/odom_pub
+Linked: (/home/slwanna/maidbot_interview/devel/.private/fake_odom/lib/pkgconfig/fake_odom.pc, /home/slwanna/maidbot_interview/devel/lib/pkgconfig/fake_odom.pc)

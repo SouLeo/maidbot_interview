@@ -1,0 +1,6 @@
+devel_space: /home/slwanna/maidbot_interview/devel
+install: false
+install_space: /home/slwanna/maidbot_interview/install
+profile: default
+source_space: /home/slwanna/maidbot_interview/src
+workspace: /home/slwanna/maidbot_interview
