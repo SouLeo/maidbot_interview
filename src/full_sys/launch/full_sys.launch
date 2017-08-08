@@ -1,0 +1,36 @@
+<launch> 
+    
+    <arg name="home_dir"    default="$(find full_sys)" />
+    <arg name="rviz_file"   default="$(arg home_dir)/cfg/robot.rviz" />
+
+    <node
+        name    = "laser_pub"
+        pkg     = "lidar"
+        type    = "laser_pub"
+        args    = ""
+
+        respawn = "false"
+    />
+
+    <node
+        name    = "odom_pub"
+        pkg     = "fake_odom"
+        type    = "odom_pub"
+        args    = ""
+
+        respawn = "false"
+        output  = "screen"
+    />
+
+    <node
+        name    = "rviz"
+        pkg     = "rviz"
+        type    = "rviz"
+        args    = "-d $(arg rviz_file) -s $(arg home_dir)/rviz/splash.png"
+
+        respawn = "false"
+        output  = "screen"
+    />
+
+</launch>
+
