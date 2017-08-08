@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "fake_odom")
 set(fake_odom_VERSION "0.0.0")
-set(fake_odom_MAINTAINER "slwanna <slwanna@todo.todo>")
+set(fake_odom_MAINTAINER "slwanna <slwanna@utexas.edu>")
 set(fake_odom_PACKAGE_FORMAT "1")
 set(fake_odom_BUILD_DEPENDS "geometry_msgs" "nav_msgs" "roscpp" "tf")
 set(fake_odom_BUILD_EXPORT_DEPENDS "geometry_msgs" "nav_msgs" "roscpp" "tf")

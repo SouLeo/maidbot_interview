@@ -1,0 +1,4 @@
+full_sys
+/home/slwanna/maidbot_interview/devel/.private/full_sys/share/full_sys/cmake/full_sysConfig.cmake /home/slwanna/maidbot_interview/devel/share/full_sys/cmake/full_sysConfig.cmake
+/home/slwanna/maidbot_interview/devel/.private/full_sys/share/full_sys/cmake/full_sysConfig-version.cmake /home/slwanna/maidbot_interview/devel/share/full_sys/cmake/full_sysConfig-version.cmake
+/home/slwanna/maidbot_interview/devel/.private/full_sys/lib/pkgconfig/full_sys.pc /home/slwanna/maidbot_interview/devel/lib/pkgconfig/full_sys.pc

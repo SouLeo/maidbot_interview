@@ -1,0 +1,8 @@
+prefix=/home/slwanna/maidbot_interview/devel/.private/full_sys
+
+Name: full_sys
+Description: Description of full_sys
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/slwanna/maidbot_interview/devel/.private/full_sys/lib 
+Requires: 
