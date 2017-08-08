@@ -1,0 +1,14 @@
+<launch>
+
+    <node
+        name    = "odom_pub"
+        pkg     = "fake_odom"
+        type    = "odom_pub"
+        args    = ""
+
+        respawn = "false"
+        output  = "screen"
+
+    />
+
+</launch>
