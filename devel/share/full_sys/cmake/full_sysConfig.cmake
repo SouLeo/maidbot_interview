@@ -1,1 +1,0 @@
-/home/slwanna/maidbot_interview/devel/.private/full_sys/share/full_sys/cmake/full_sysConfig.cmake

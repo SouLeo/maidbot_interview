@@ -1,1 +1,0 @@
-/home/slwanna/maidbot_interview/devel/.private/catkin_tools_prebuild/setup.bash

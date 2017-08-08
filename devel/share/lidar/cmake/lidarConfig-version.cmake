@@ -1,1 +1,0 @@
-/home/slwanna/maidbot_interview/devel/.private/lidar/share/lidar/cmake/lidarConfig-version.cmake
