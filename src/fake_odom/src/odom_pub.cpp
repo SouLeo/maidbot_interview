@@ -37,6 +37,7 @@ void odom_init(nav_msgs::Odometry& odom){
     odom.header.frame_id = "odom";
     odom.child_frame_id = "base_link";
     odom.pose.pose.position.z = 0.0;
+
 }
 
 int main(int argc, char** argv) {
@@ -54,6 +55,11 @@ int main(int argc, char** argv) {
 
     nav_msgs::Odometry odom;
     odom_init(odom);
+  
+    // set the velocity
+    odom.twist.twist.linear.x = odom_node->getvx();
+    odom.twist.twist.linear.y = odom_node->getvy();
+    odom.twist.twist.angular.z = odom_node->getvth();
 
     while(ros::ok()) {
         ros::spinOnce();
@@ -83,11 +89,6 @@ int main(int argc, char** argv) {
         odom.pose.pose.position.x = odom_node->x;
         odom.pose.pose.position.y = odom_node->y;
         odom.pose.pose.orientation = odom_node->odom_quat;
-
-        // set the velocity
-        odom.twist.twist.linear.x = odom_node->getvx();
-        odom.twist.twist.linear.y = odom_node->getvy();
-        odom.twist.twist.angular.z = odom_node->getvth();
 
         // publish the message
         odom_node->odom_pub.publish(odom);
